@@ -1,0 +1,17 @@
+env: "prod"
+app:
+  port: 1323
+  timeout: 5s
+JwtSecret: your_secret_key
+dsn:
+  host: 87.242.100.33
+  user: root
+  password: reg2025
+  dbname: fullstack
+  port: 5432
+  sslmode: disable
+smtp:
+  from: "vsrs-rs@mail.ru"
+  password: "VwuD7ynRjauwecAN2PHs"
+  host: "smtp.mail.ru"
+  port: "587"
