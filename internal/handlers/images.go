@@ -6,9 +6,10 @@ import (
 	"strconv"
 	"time"
 
+	"backend/internal/model"
+
 	"github.com/labstack/echo/v4"
 	"gorm.io/gorm"
-	"backend/internal/model"
 )
 
 type ImageResponse struct {
@@ -50,4 +51,4 @@ func DeleteImage(db *gorm.DB) echo.HandlerFunc {
 
 		return c.JSON(http.StatusOK, map[string]string{"message": "Image deleted successfully"})
 	}
-} 
+}
